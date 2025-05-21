@@ -32,26 +32,25 @@ export function DishCard({ dish }) {
         {[...Array(maxLevel)].map((_, i) => (
           <span
             key={i}
-            className={`mx-0.5 w-2 h-2 rounded-full inline-block ${
-              i < level ? "bg-red-500" : "bg-gray-300"
-            }`}
+            className={`mx-0.5 w-2 h-2 rounded-full inline-block ${i < level ? "bg-red-500" : "bg-gray-300"
+              }`}
           />
         ))}
-        <span className="ml-2 text-xs font-medium text-gray-700">{level}/{maxLevel}</span>
+        <span className="ml-2 text-xs font-medium text-gray-700 dark:text-gray-200">{level}/{maxLevel}</span>
       </div>
     );
   };
-  
+
   // Format price with appropriate currency
   const formattedPrice = new Intl.NumberFormat('en-IN', {
     style: 'currency',
     currency: 'INR',
     minimumFractionDigits: 0
   }).format(dish.price);
-  
+
   // Get appropriate tag icon
   const getTagIcon = (tag) => {
-    switch(tag) {
+    switch (tag) {
       case 'popular':
         return <ThumbsUp size={14} className="mr-1" />;
       case 'chef\'s special':
@@ -65,8 +64,8 @@ export function DishCard({ dish }) {
 
   return (
     <Card className="overflow-hidden">
-      <CardHeader 
-        className="pb-1 pt-2 px-3 active:bg-gray-50"
+      <CardHeader
+        className="pb-1 pt-2 px-3 active:bg-gray-50 dark:active:bg-gray-800"
         onClick={() => setIsExpanded(!isExpanded)}
       >
         <div className="flex justify-between items-start gap-2">
@@ -88,10 +87,10 @@ export function DishCard({ dish }) {
 
         <div className="flex flex-wrap gap-1 mt-1">
           {dish.tags.map((tag) => (
-            <Badge 
-              key={tag} 
-              variant="secondary" 
-              className="flex items-center px-1.5 py-0 bg-gray-100 text-gray-800 text-xs" 
+            <Badge
+              key={tag}
+              variant="secondary"
+              className="flex items-center px-1.5 py-0 bg-gray-100 text-gray-800 text-xs dark:bg-gray-700 dark:text-gray-100"
             >
               {getTagIcon(tag)}
               {tag}
@@ -99,33 +98,33 @@ export function DishCard({ dish }) {
           ))}
         </div>
       </CardHeader>
-      
+
       {isExpanded && (
         <>
-                  <Separator />
+          <Separator />
           <CardContent className="py-2 px-3">
-            <CardDescription className="mb-2 text-gray-600 text-sm">{dish.description}</CardDescription>
-            
+            <CardDescription className="mb-2 text-gray-600 dark:text-gray-300 text-sm">{dish.description}</CardDescription>
+
             {dish.spice_level > 0 && (
               <div className="mb-2">
-                <span className="text-xs font-medium text-gray-700 mb-0.5 block">Spice Level</span>
+                <span className="text-xs font-medium text-gray-700 dark:text-gray-200 mb-0.5 block">Spice Level</span>
                 {renderSpiceLevel(dish.spice_level)}
               </div>
             )}
-            
-            <div className="flex items-center text-xs text-gray-600">
+
+            <div className="flex items-center text-xs text-gray-600 dark:text-gray-300">
               <Clock size={12} className="mr-1" />
               <span className="font-medium">Prep Time:</span>
               <span className="ml-1">{dish.preparation_time} mins</span>
             </div>
           </CardContent>
-          
+
           <Separator />
-          
+
           <CardFooter className="py-2 px-3">
             <div>
-              <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-0.5">Ingredients</h4>
-              <p className="text-xs capitalize text-gray-700">
+              <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-0.5">Ingredients</h4>
+              <p className="text-xs capitalize text-gray-700 dark:text-gray-200">
                 {dish.ingredients.join(', ')}
               </p>
             </div>

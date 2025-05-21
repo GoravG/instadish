@@ -17,7 +17,7 @@ export function SearchBar({ searchQuery, onSearchChange, onToggleFilters }) {
       </div>
       <button
         onClick={onToggleFilters}
-        className="flex items-center gap-1 p-2 rounded-md border border-gray-200 hover:bg-gray-50"
+        className="h-11 sm:h-10 px-4 flex items-center gap-2 rounded-md border border-gray-300 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition"
       >
         <SlidersHorizontal className="h-4 w-4" />
         <span className="text-sm">Filters</span>
