@@ -5,8 +5,6 @@ import { SearchBar } from "@/components/menu/SearchBar";
 import { FilterSection } from "@/components/menu/FilterSection";
 import { DishCard } from "@/components/menu/DishCard";
 
-// Add import for DarkModeToggle
-import { DarkModeToggle } from "@/components/DarkModeToggle";
 import { AppHeader } from "@/components/AppHeader";
 
 export default function RestaurantMenu() {
