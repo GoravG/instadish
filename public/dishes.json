@@ -1,921 +1,1441 @@
 {
 	"menu": {
-	  "categories": [
-		{
-		  "id": 1,
-		  "name": "Chakna & Bar Bites",
-		  "description": "Perfect accompaniments for your drinks, with an Indian twist.",
-		  "type": "food"
-		},
-		{
-		  "id": 2,
-		  "name": "Tandoori Delights",
-		  "description": "Smoky and flavorful small plates from our authentic tandoor.",
-		  "type": "food"
-		},
-		{
-		  "id": 9,
-		  "name": "Starters (Appetizers)",
-		  "description": "Flavorful beginnings to your dining experience, beyond typical bar snacks.",
-		  "type": "food"
-		},
-		{
-		  "id": 10,
-		  "name": "Main Course (Indian Curries & Breads)",
-		  "description": "Hearty and aromatic main dishes served with traditional Indian breads.",
-		  "type": "food"
-		},
-		{
-		  "id": 3,
-		  "name": "Signature Cocktails",
-		  "description": "Our mixologist's unique Indian-inspired alcoholic creations.",
-		  "type": "alcoholic"
-		},
-		{
-		  "id": 4,
-		  "name": "Classic Cocktails",
-		  "description": "Timeless international cocktails, expertly crafted.",
-		  "type": "alcoholic"
-		},
-		{
-		  "id": 5,
-		  "name": "Whiskey & Malts",
-		  "description": "A curated selection of fine whiskies, bourbons, and single malts (served 30ml/60ml).",
-		  "type": "alcoholic"
-		},
-		{
-		  "id": 6,
-		  "name": "Beers & Ciders",
-		  "description": "A range of domestic, imported, and craft beers and ciders.",
-		  "type": "alcoholic"
-		},
-		{
-		  "id": 7,
-		  "name": "Wines",
-		  "description": "Selected red, white, rosé, and sparkling wines (served by glass/bottle).",
-		  "type": "alcoholic"
-		},
-		{
-		  "id": 8,
-		  "name": "Mocktails & Refreshers",
-		  "description": "Creative non-alcoholic beverages, fresh juices, and traditional coolers.",
-		  "type": "beverage"
-		},
-		{
-		  "id": 11,
-		  "name": "Soft Drinks & Mixers",
-		  "description": "Standard soft drinks, aerated beverages, and mixers.",
-		  "type": "beverage"
-		}
-	  ],
-	  "dishes": [
-		{
-		  "id": 101,
-		  "name": "Masala Peanuts",
-		  "description": "Roasted peanuts tossed with chopped onions, tomatoes, green chillies, chaat masala, and a squeeze of lemon.",
-		  "category_id": 1,
-		  "price": 220,
-		  "veg": true,
-		  "spice_level": 2,
-		  "tags": ["popular", "light bite"],
-		  "preparation_time": 5,
-		  "ingredients": ["peanuts", "onion", "tomato", "green chilli", "chaat masala", "lemon"]
-		},
-		{
-		  "id": 102,
-		  "name": "Cheesy Garlic Bread with Jalapeños",
-		  "description": "Crispy toasted bread topped with molten cheese, garlic butter, and spicy jalapeño slices.",
-		  "category_id": 1,
-		  "price": 280,
-		  "veg": true,
-		  "spice_level": 1,
-		  "tags": ["popular", "must try"],
-		  "preparation_time": 10,
-		  "ingredients": ["bread", "mozzarella cheese", "garlic butter", "jalapeños", "herbs"]
-		},
-		{
-		  "id": 103,
-		  "name": "Spicy Chicken Popcorn",
-		  "description": "Bite-sized chicken pieces marinated in fiery spices, fried till golden and crisp.",
-		  "category_id": 1,
-		  "price": 350,
-		  "veg": false,
-		  "spice_level": 3,
-		  "tags": ["hot", "spicy", "popular"],
-		  "preparation_time": 15,
-		  "ingredients": ["chicken breast", "flour", "red chilli powder", "spices", "breadcrumbs"]
-		},
-		{
-		  "id": 125,
-		  "name": "Fish Fingers with Tartar Sauce",
-		  "description": "Crispy fried fish batons served with a creamy, tangy tartar dip.",
-		  "category_id": 1,
-		  "price": 420,
-		  "veg": false,
-		  "spice_level": 1,
-		  "tags": ["popular", "seafood delight"],
-		  "preparation_time": 15,
-		  "ingredients": ["fish fillet", "breadcrumbs", "flour", "egg", "tartar sauce", "lemon"]
-		},
-		{
-		  "id": 126,
-		  "name": "Hara Bhara Kebab (Bar Snack Style)",
-		  "description": "Spinach, peas, and potato patties infused with Indian spices, shallow fried, served as small bites.",
-		  "category_id": 1,
-		  "price": 340,
-		  "veg": true,
-		  "spice_level": 1,
-		  "tags": ["vegetarian favorite", "healthy choice", "light bite"],
-		  "preparation_time": 18,
-		  "ingredients": ["spinach", "green peas", "potatoes", "paneer", "spices", "breadcrumbs"]
-		},
-		{
-		  "id": 127,
-		  "name": "Chilli Cheese Toast",
-		  "description": "Classic comfort snack - toasted bread topped with gooey cheese and zesty green chillies.",
-		  "category_id": 1,
-		  "price": 290,
-		  "veg": true,
-		  "spice_level": 2,
-		  "tags": ["popular", "quick bite"],
-		  "preparation_time": 8,
-		  "ingredients": ["bread", "cheddar cheese", "mozzarella cheese", "green chillies", "butter"]
-		},
-		{
-		  "id": 104,
-		  "name": "Hariyali Paneer Tikka",
-		  "description": "Cottage cheese cubes marinated in a vibrant green paste of mint, coriander, and spices, char-grilled.",
-		  "category_id": 2,
-		  "price": 380,
-		  "veg": true,
-		  "spice_level": 2,
-		  "tags": ["chef's special", "popular"],
-		  "preparation_time": 15,
-		  "ingredients": ["paneer", "yogurt", "mint", "coriander", "green chillies", "spices"]
-		},
-		{
-		  "id": 105,
-		  "name": "Murgh Seekh Kebab",
-		  "description": "Minced chicken blended with aromatic spices, skewered and grilled to perfection in the tandoor.",
-		  "category_id": 2,
-		  "price": 450,
-		  "veg": false,
-		  "spice_level": 2,
-		  "tags": ["popular", "must try"],
-		  "preparation_time": 18,
-		  "ingredients": ["minced chicken", "ginger-garlic paste", "onions", "coriander", "spices"]
-		},
-		{
-		  "id": 106,
-		  "name": "Tandoori Aloo Chaat",
-		  "description": "Smoky tandoor-roasted baby potatoes tossed in tangy chaat masala and chutneys.",
-		  "category_id": 2,
-		  "price": 320,
-		  "veg": true,
-		  "spice_level": 1,
-		  "tags": ["light bite", "new arrival"],
-		  "preparation_time": 12,
-		  "ingredients": ["baby potatoes", "yogurt", "tandoori masala", "chaat masala", "mint chutney", "tamarind chutney"]
-		},
-		{
-		  "id": 128,
-		  "name": "Achari Fish Tikka",
-		  "description": "Succulent fish pieces marinated in tangy pickle spices and yogurt, grilled in the tandoor.",
-		  "category_id": 2,
-		  "price": 480,
-		  "veg": false,
-		  "spice_level": 2,
-		  "tags": ["chef's special", "seafood delight", "tangy"],
-		  "preparation_time": 18,
-		  "ingredients": ["fish fillet", "yogurt", "achari masala", "mustard oil", "ginger-garlic paste"]
-		},
-		{
-		  "id": 129,
-		  "name": "Mutton Galouti Kebab",
-		  "description": "Melt-in-the-mouth minced mutton kebabs, delicately spiced and pan-fried, served on ulte tawe ka paratha.",
-		  "category_id": 2,
-		  "price": 550,
-		  "veg": false,
-		  "spice_level": 2,
-		  "tags": ["royal treat", "must try", "popular", "melts in mouth"],
-		  "preparation_time": 25,
-		  "ingredients": ["minced mutton", "raw papaya paste", "spices", "ghee", "saffron"]
-		},
-		{
-		  "id": 130,
-		  "name": "Tandoori Mushroom Tikka",
-		  "description": "Button mushrooms marinated in spiced yogurt and char-grilled to perfection.",
-		  "category_id": 2,
-		  "price": 360,
-		  "veg": true,
-		  "spice_level": 2,
-		  "tags": ["vegetarian favorite", "smoky flavor"],
-		  "preparation_time": 15,
-		  "ingredients": ["button mushrooms", "yogurt", "tandoori masala", "besan", "spices"]
-		},
-		{
-		  "id": 149,
-		  "name": "Dahi Ke Kebab",
-		  "description": "Yogurt patties blended with spices and herbs, delicately fried. A creamy delight.",
-		  "category_id": 9,
-		  "price": 370,
-		  "veg": true,
-		  "spice_level": 1,
-		  "tags": ["vegetarian favorite", "mildly spiced", "melts in mouth", "chef's special"],
-		  "preparation_time": 15,
-		  "ingredients": ["hung curd", "paneer", "spices", "herbs", "breadcrumbs"]
-		},
-		{
-		  "id": 150,
-		  "name": "Amritsari Fish Fry",
-		  "description": "Spicy battered fish, deep-fried till golden and crisp, served with mint chutney and lemon wedges.",
-		  "category_id": 9,
-		  "price": 490,
-		  "veg": false,
-		  "spice_level": 2,
-		  "tags": ["popular", "seafood delight", "spicy", "must try"],
-		  "preparation_time": 18,
-		  "ingredients": ["fish fillet", "gram flour", "ajwain", "spices", "lemon juice", "mint chutney"]
-		},
-		{
-		  "id": 151,
-		  "name": "Chicken 65",
-		  "description": "Spicy, deep-fried chicken bites originating from Chennai, tossed with curry leaves and green chillies.",
-		  "category_id": 9,
-		  "price": 430,
-		  "veg": false,
-		  "spice_level": 3,
-		  "tags": ["hot", "spicy", "popular", "south indian"],
-		  "preparation_time": 20,
-		  "ingredients": ["chicken", "yogurt", "curry leaves", "ginger-garlic paste", "spices", "rice flour"]
-		},
-		{
-		  "id": 163,
-		  "name": "Paneer Pakora",
-		  "description": "Cottage cheese slices dipped in spiced gram flour batter and deep fried.",
-		  "category_id": 9,
-		  "price": 350,
-		  "veg": true,
-		  "spice_level": 1,
-		  "tags": ["vegetarian favorite", "classic", "crispy"],
-		  "preparation_time": 15,
-		  "ingredients": ["paneer", "gram flour", "ajwain", "spices", "oil"]
-		},
-		{
-		  "id": 152,
-		  "name": "Butter Chicken",
-		  "description": "Classic creamy tomato and butter based chicken curry, finished with fenugreek.",
-		  "category_id": 10,
-		  "price": 550,
-		  "veg": false,
-		  "spice_level": 2,
-		  "tags": ["popular", "chef's special", "curry", "all-time favorite", "creamy"],
-		  "preparation_time": 25,
-		  "ingredients": ["chicken", "tomato puree", "butter", "cream", "cashew paste", "spices", "fenugreek"]
-		},
-		{
-		  "id": 153,
-		  "name": "Dal Makhani",
-		  "description": "Slow-cooked black lentils and kidney beans in a rich, buttery, creamy sauce.",
-		  "category_id": 10,
-		  "price": 480,
-		  "veg": true,
-		  "spice_level": 2,
-		  "tags": ["popular", "vegetarian favorite", "curry", "creamy", "all-time favorite"],
-		  "preparation_time": 30,
-		  "ingredients": ["black lentils", "kidney beans", "butter", "cream", "tomato puree", "spices"]
-		},
-		{
-		  "id": 154,
-		  "name": "Paneer Butter Masala",
-		  "description": "Cottage cheese cubes in a rich, mildly sweet, creamy tomato and cashew gravy.",
-		  "category_id": 10,
-		  "price": 520,
-		  "veg": true,
-		  "spice_level": 1,
-		  "tags": ["popular", "vegetarian favorite", "curry", "creamy"],
-		  "preparation_time": 20,
-		  "ingredients": ["paneer", "tomato puree", "cashew paste", "butter", "cream", "spices"]
-		},
-		{
-		  "id": 164,
-		  "name": "Mutton Rogan Josh",
-		  "description": "Aromatic lamb curry, slow-cooked in a gravy of browned onions, yogurt, garlic, ginger and aromatic spices.",
-		  "category_id": 10,
-		  "price": 650,
-		  "veg": false,
-		  "spice_level": 3,
-		  "tags": ["popular", "curry", "chef's special", "aromatic", "spicy"],
-		  "preparation_time": 35,
-		  "ingredients": ["mutton", "yogurt", "onions", "ginger-garlic paste", "kashmiri red chilli", "spices"]
-		},
-		{
-		  "id": 155,
-		  "name": "Garlic Naan",
-		  "description": "Soft Indian leavened flatbread topped with garlic and butter.",
-		  "category_id": 10,
-		  "price": 120,
-		  "veg": true,
-		  "spice_level": 1,
-		  "tags": ["popular", "breads", "accompaniment"],
-		  "preparation_time": 7,
-		  "ingredients": ["refined flour", "yeast", "yogurt", "garlic", "butter"]
-		},
-		{
-		  "id": 156,
-		  "name": "Tandoori Roti",
-		  "description": "Whole wheat unleavened bread cooked in a tandoor.",
-		  "category_id": 10,
-		  "price": 80,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["breads", "healthy choice", "accompaniment"],
-		  "preparation_time": 5,
-		  "ingredients": ["whole wheat flour", "water", "salt"]
-		},
-		{
-		  "id": 157,
-		  "name": "Laccha Paratha",
-		  "description": "Layered flaky whole wheat bread, cooked with ghee or oil.",
-		  "category_id": 10,
-		  "price": 100,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["breads", "popular", "accompaniment"],
-		  "preparation_time": 8,
-		  "ingredients": ["whole wheat flour", "ghee", "salt"]
-		},
-		{
-		  "id": 165,
-		  "name": "Butter Naan",
-		  "description": "Soft Indian leavened flatbread generously brushed with butter.",
-		  "category_id": 10,
-		  "price": 100,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["popular", "breads", "accompaniment"],
-		  "preparation_time": 7,
-		  "ingredients": ["refined flour", "yeast", "yogurt", "butter"]
-		},
-		{
-		  "id": 107,
-		  "name": "Imli Mojito",
-		  "description": "A tantalizing Indian twist! White rum, tamarind pulp, mint, lime, sugar, topped with soda.",
-		  "category_id": 3,
-		  "price": 550,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["bartender's special", "refreshing", "popular"],
-		  "preparation_time": 3,
-		  "ingredients": ["white rum", "tamarind pulp", "mint leaves", "lime wedges", "sugar", "soda"]
-		},
-		{
-		  "id": 108,
-		  "name": "Paan-tastic Martini",
-		  "description": "Vodka infused with the flavors of paan (betel leaf), gulkand, and a hint of cardamom.",
-		  "category_id": 3,
-		  "price": 620,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["must try", "bartender's special", "unique"],
-		  "preparation_time": 4,
-		  "ingredients": ["vodka", "paan syrup", "gulkand", "cardamom powder", "lime juice"]
-		},
-		{
-		  "id": 109,
-		  "name": "Masala Chai Old Fashioned",
-		  "description": "Whiskey infused with masala chai spices, bitters, and a touch of jaggery syrup.",
-		  "category_id": 3,
-		  "price": 650,
-		  "veg": true,
-		  "spice_level": 1,
-		  "tags": ["new arrival", "bold flavor"],
-		  "preparation_time": 4,
-		  "ingredients": ["whiskey", "masala chai reduction", "angostura bitters", "jaggery syrup", "orange peel"]
-		},
-		{
-		  "id": 131,
-		  "name": "Kala Khatta Gola Spike",
-		  "description": "Childhood nostalgia with an adult kick! Vodka, kala khatta syrup, chaat masala, lime, and soda.",
-		  "category_id": 3,
-		  "price": 580,
-		  "veg": true,
-		  "spice_level": 1,
-		  "tags": ["bartender's special", "unique", "tangy"],
-		  "preparation_time": 3,
-		  "ingredients": ["vodka", "kala khatta syrup", "chaat masala", "lime juice", "soda"]
-		},
-		{
-		  "id": 132,
-		  "name": "Gulab Fizz",
-		  "description": "Elegant and aromatic: Gin, rose syrup, fresh lime juice, topped with sparkling water and edible rose petals.",
-		  "category_id": 3,
-		  "price": 600,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["refreshing", "floral", "bartender's special"],
-		  "preparation_time": 3,
-		  "ingredients": ["gin", "rose syrup", "lime juice", "sparkling water", "edible rose petals"]
-		},
-		{
-		  "id": 133,
-		  "name": "Coconut & Cardamom Daiquiri",
-		  "description": "A tropical Indian twist on a classic. White rum, creamy coconut, fragrant cardamom, and zesty lime.",
-		  "category_id": 3,
-		  "price": 630,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["creamy", "tropical", "unique"],
-		  "preparation_time": 4,
-		  "ingredients": ["white rum", "coconut cream", "cardamom syrup", "lime juice"]
-		},
-		{
-		  "id": 110,
-		  "name": "Whiskey Sour",
-		  "description": "A perfect balance of whiskey, fresh lemon juice, sugar, and optionally, egg white.",
-		  "category_id": 4,
-		  "price": 580,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["popular", "classic"],
-		  "preparation_time": 3,
-		  "ingredients": ["bourbon whiskey", "lemon juice", "sugar syrup", "egg white (optional)"]
-		},
-		{
-		  "id": 111,
-		  "name": "Long Island Iced Tea (LIIT)",
-		  "description": "A potent mix of five white spirits, lime juice, and a splash of cola.",
-		  "category_id": 4,
-		  "price": 700,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["popular", "strong"],
-		  "preparation_time": 3,
-		  "ingredients": ["vodka", "gin", "rum", "tequila", "triple sec", "lime juice", "cola"]
-		},
-		{
-		  "id": 112,
-		  "name": "Cosmopolitan",
-		  "description": "Vodka, triple sec, cranberry juice, and freshly squeezed lime juice. Chic and tart.",
-		  "category_id": 4,
-		  "price": 600,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["classic", "refreshing"],
-		  "preparation_time": 2,
-		  "ingredients": ["vodka", "triple sec", "cranberry juice", "lime juice"]
-		},
-		{
-		  "id": 134,
-		  "name": "Margarita",
-		  "description": "The quintessential tequila cocktail with triple sec and fresh lime juice, served with a salt rim.",
-		  "category_id": 4,
-		  "price": 620,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["popular", "classic", "tequila"],
-		  "preparation_time": 3,
-		  "ingredients": ["tequila", "triple sec", "lime juice", "salt"]
-		},
-		{
-		  "id": 135,
-		  "name": "Negroni",
-		  "description": "A perfectly balanced Italian classic: equal parts gin, Campari, and sweet vermouth.",
-		  "category_id": 4,
-		  "price": 680,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["classic", "bitter-sweet", "sophisticated"],
-		  "preparation_time": 2,
-		  "ingredients": ["gin", "campari", "sweet vermouth", "orange peel"]
-		},
-		{
-		  "id": 136,
-		  "name": "Pina Colada",
-		  "description": "A sweet and creamy tropical delight made with rum, coconut cream, and pineapple juice.",
-		  "category_id": 4,
-		  "price": 600,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["popular", "classic", "tropical", "creamy"],
-		  "preparation_time": 3,
-		  "ingredients": ["white rum", "coconut cream", "pineapple juice"]
-		},
-		{
-		  "id": 113,
-		  "name": "Johnnie Walker Black Label",
-		  "description": "A rich, complex, and incredibly well-balanced blended Scotch whisky.",
-		  "category_id": 5,
-		  "price": 550,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["popular", "blended scotch"],
-		  "preparation_time": 1,
-		  "ingredients": ["blended scotch whisky"]
-		},
-		{
-		  "id": 114,
-		  "name": "Jack Daniel's Old No. 7",
-		  "description": "Classic Tennessee whiskey with a smooth character and notes of caramel and vanilla.",
-		  "category_id": 5,
-		  "price": 500,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["popular", "tennessee whiskey"],
-		  "preparation_time": 1,
-		  "ingredients": ["tennessee whiskey"]
-		},
-		{
-		  "id": 115,
-		  "name": "Paul John Brilliance",
-		  "description": "An unpeated Indian single malt with notes of honey, fruit, and a hint of spice.",
-		  "category_id": 5,
-		  "price": 750,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["indian single malt", "must try", "premium"],
-		  "preparation_time": 1,
-		  "ingredients": ["indian single malt whisky"]
-		},
-		{
-		  "id": 137,
-		  "name": "Amrut Fusion Single Malt",
-		  "description": "Award-winning Indian single malt with notes of peat, fruit, and spice. A connoisseur's choice.",
-		  "category_id": 5,
-		  "price": 850,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["indian single malt", "premium", "award-winner"],
-		  "preparation_time": 1,
-		  "ingredients": ["indian single malt whisky"]
-		},
-		{
-		  "id": 138,
-		  "name": "Glenfiddich 12 YO",
-		  "description": "A classic Speyside single malt Scotch whisky, renowned for its sweet and fruity notes.",
-		  "category_id": 5,
-		  "price": 900,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["single malt scotch", "premium", "popular"],
-		  "preparation_time": 1,
-		  "ingredients": ["single malt scotch whisky"]
-		},
-		{
-		  "id": 139,
-		  "name": "Jameson Irish Whiskey",
-		  "description": "Smooth and versatile Irish whiskey, triple distilled for a balanced flavor.",
-		  "category_id": 5,
-		  "price": 580,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["irish whiskey", "popular", "smooth"],
-		  "preparation_time": 1,
-		  "ingredients": ["irish whiskey"]
-		},
-		{
-		  "id": 116,
-		  "name": "Kingfisher Ultra (Bottle)",
-		  "description": "A smooth, crisp, and refreshing Indian lager, easy to drink.",
-		  "category_id": 6,
-		  "price": 300,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["popular", "lager", "domestic"],
-		  "preparation_time": 1,
-		  "ingredients": ["malted barley", "hops", "water", "yeast"]
-		},
-		{
-		  "id": 117,
-		  "name": "Hoegaarden Witbier (Draught/Bottle)",
-		  "description": "The original Belgian wheat beer, with notes of coriander and orange peel.",
-		  "category_id": 6,
-		  "price": 480,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["imported", "wheat beer", "popular"],
-		  "preparation_time": 1,
-		  "ingredients": ["wheat", "barley malt", "hops", "coriander", "orange peel"]
-		},
-		{
-		  "id": 118,
-		  "name": "Simba Wit (Bottle)",
-		  "description": "A flavorful Indian craft wheat beer with hints of orange zest, coriander and lemongrass.",
-		  "category_id": 6,
-		  "price": 380,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["craft beer", "wheat beer", "indian craft"],
-		  "preparation_time": 1,
-		  "ingredients": ["wheat", "barley", "orange zest", "coriander", "lemongrass"]
-		},
-		{
-		  "id": 140,
-		  "name": "Bira 91 White (Bottle/Draught)",
-		  "description": "A popular Indian craft wheat beer, cloudy and refreshing with citrus and coriander notes.",
-		  "category_id": 6,
-		  "price": 360,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["indian craft", "wheat beer", "popular", "refreshing"],
-		  "preparation_time": 1,
-		  "ingredients": ["wheat", "barley malt", "hops", "coriander", "orange peel"]
-		},
-		{
-		  "id": 141,
-		  "name": "Corona Extra (Bottle)",
-		  "description": "A crisp, pale Mexican lager, often served with a lime wedge.",
-		  "category_id": 6,
-		  "price": 450,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["imported", "lager", "popular"],
-		  "preparation_time": 1,
-		  "ingredients": ["barley malt", "hops", "corn", "yeast"]
-		},
-		{
-		  "id": 142,
-		  "name": "Strongbow Apple Cider (Bottle)",
-		  "description": "A crisp and refreshing apple cider, perfect for a change of pace.",
-		  "category_id": 6,
-		  "price": 420,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["cider", "imported", "refreshing"],
-		  "preparation_time": 1,
-		  "ingredients": ["fermented apple juice"]
-		},
-		{
-		  "id": 119,
-		  "name": "Fratelli Sangiovese Bianco (Glass/Bottle)",
-		  "description": "A crisp and refreshing Indian white wine with fruity notes. India's first Sangiovese white.",
-		  "category_id": 7,
-		  "price": 600,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["indian wine", "white wine", "popular"],
-		  "preparation_time": 1,
-		  "ingredients": ["sangiovese bianco grapes"]
-		},
-		{
-		  "id": 120,
-		  "name": "Big Banyan Merlot (Glass/Bottle)",
-		  "description": "A smooth Indian red wine with aromas of dark cherries, plums, and a hint of spice.",
-		  "category_id": 7,
-		  "price": 650,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["indian wine", "red wine", "must try"],
-		  "preparation_time": 1,
-		  "ingredients": ["merlot grapes"]
-		},
-		{
-		  "id": 121,
-		  "name": "Chandon Brut (Bottle)",
-		  "description": "A premium Indian sparkling wine with crisp apple and citrus notes.",
-		  "category_id": 7,
-		  "price": 3500,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["indian wine", "sparkling wine", "celebration"],
-		  "preparation_time": 1,
-		  "ingredients": ["chardonnay grapes", "pinot noir grapes", "chenin blanc grapes"]
-		},
-		{
-		  "id": 143,
-		  "name": "Sula Dindori Reserve Shiraz (Glass/Bottle)",
-		  "description": "A full-bodied Indian red wine with rich berry flavors and hints of spice.",
-		  "category_id": 7,
-		  "price": 700,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["indian wine", "red wine", "popular", "reserve"],
-		  "preparation_time": 1,
-		  "ingredients": ["shiraz grapes"]
-		},
-		{
-		  "id": 144,
-		  "name": "York Arros (Bottle)",
-		  "description": "A premium Indian reserve blend of Shiraz and Cabernet Sauvignon, barrel-aged.",
-		  "category_id": 7,
-		  "price": 2800,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["indian wine", "red wine", "premium", "reserve"],
-		  "preparation_time": 1,
-		  "ingredients": ["shiraz grapes", "cabernet sauvignon grapes"]
-		},
-		{
-		  "id": 145,
-		  "name": "Jacob's Creek Chardonnay (Glass/Bottle)",
-		  "description": "A popular Australian white wine with notes of melon, peach, and a touch of oak.",
-		  "category_id": 7,
-		  "price": 750,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["imported wine", "white wine", "popular"],
-		  "preparation_time": 1,
-		  "ingredients": ["chardonnay grapes"]
-		},
-		{
-		  "id": 122,
-		  "name": "Aam Panna Sparkler",
-		  "description": "Refreshing raw mango drink with mint, roasted cumin, black salt, and a splash of soda.",
-		  "category_id": 8,
-		  "price": 320,
-		  "veg": true,
-		  "spice_level": 1,
-		  "tags": ["popular", "refreshing", "traditional indian"],
-		  "preparation_time": 3,
-		  "ingredients": ["raw mango pulp", "mint leaves", "roasted cumin", "black salt", "sugar", "soda"]
-		},
-		{
-		  "id": 123,
-		  "name": "Berry Blast Smoothie",
-		  "description": "A healthy blend of mixed berries, yogurt, and a touch of honey.",
-		  "category_id": 8,
-		  "price": 380,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["healthy choice", "refreshing"],
-		  "preparation_time": 4,
-		  "ingredients": ["mixed berries", "yogurt", "honey", "banana (optional)"]
-		},
-		{
-		  "id": 124,
-		  "name": "Classic Nimbu Pani Shikanji",
-		  "description": "The ultimate Indian lemonade with a twist of black salt, cumin, and sugar/salt.",
-		  "category_id": 8,
-		  "price": 250,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["traditional indian", "refreshing", "popular"],
-		  "preparation_time": 2,
-		  "ingredients": ["lemon juice", "water", "sugar", "black salt", "roasted cumin powder"]
-		},
-		{
-		  "id": 146,
-		  "name": "Virgin Mojito",
-		  "description": "The classic refreshing mix of mint, lime, sugar, and soda, minus the rum.",
-		  "category_id": 8,
-		  "price": 300,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["popular", "refreshing", "classic mocktail"],
-		  "preparation_time": 3,
-		  "ingredients": ["mint leaves", "lime wedges", "sugar syrup", "soda water"]
-		},
-		{
-		  "id": 147,
-		  "name": "Spiced Guava Cooler",
-		  "description": "Sweet guava juice with a spicy kick from Tabasco, balanced with lime and chaat masala.",
-		  "category_id": 8,
-		  "price": 340,
-		  "veg": true,
-		  "spice_level": 2,
-		  "tags": ["unique", "spicy mocktail", "refreshing"],
-		  "preparation_time": 3,
-		  "ingredients": ["guava juice", "tabasco sauce", "lime juice", "chaat masala", "ice"]
-		},
-		{
-		  "id": 148,
-		  "name": "Kokum Sherbet",
-		  "description": "A traditional Indian summer cooler made from Kokum fruit, known for its tangy and digestive properties.",
-		  "category_id": 8,
-		  "price": 280,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["traditional indian", "healthy choice", "digestive", "tangy"],
-		  "preparation_time": 2,
-		  "ingredients": ["kokum syrup", "water", "sugar (optional)", "cumin powder (optional)"]
-		},
-		{
-		  "id": 158,
-		  "name": "Bottled Water (1L)",
-		  "description": "Packaged drinking water (Brand subject to availability).",
-		  "category_id": 11,
-		  "price": 60,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["soft drink", "essential"],
-		  "preparation_time": 1,
-		  "ingredients": ["purified water"]
-		},
-		{
-		  "id": 159,
-		  "name": "Aerated Beverages (Pepsi/Coke/Diet Coke/7Up/Mirinda)",
-		  "description": "Choice of popular carbonated soft drinks (Can/Bottle).",
-		  "category_id": 11,
-		  "price": 90,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["soft drink", "popular"],
-		  "preparation_time": 1,
-		  "ingredients": ["carbonated water", "sweetener", "flavorings"]
-		},
-		{
-		  "id": 160,
-		  "name": "Club Soda / Sparkling Water",
-		  "description": "Plain carbonated water, perfect as a mixer or on its own.",
-		  "category_id": 11,
-		  "price": 70,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["soft drink", "mixer"],
-		  "preparation_time": 1,
-		  "ingredients": ["carbonated water"]
-		},
-		{
-		  "id": 161,
-		  "name": "Tonic Water",
-		  "description": "Carbonated water with quinine, a classic mixer for gin and other spirits.",
-		  "category_id": 11,
-		  "price": 100,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["soft drink", "mixer", "bitter"],
-		  "preparation_time": 1,
-		  "ingredients": ["carbonated water", "quinine", "sweetener"]
-		},
-		{
-		  "id": 162,
-		  "name": "Fresh Lime Soda (Sweet/Salted/Mixed)",
-		  "description": "Refreshing fizzy lime drink, made to your preference of sweet, salted, or both.",
-		  "category_id": 11,
-		  "price": 150,
-		  "veg": true,
-		  "spice_level": 0,
-		  "tags": ["soft drink", "refreshing", "customizable", "traditional indian"],
-		  "preparation_time": 2,
-		  "ingredients": ["fresh lime juice", "soda water", "sugar", "black salt", "salt"]
-		}
-	  ],
-	  "tags": {
-		"popular": "Frequently ordered items by our guests.",
-		"hot": "Currently trending and in high demand.",
-		"chef's special": "Signature dishes specially curated by our chef.",
-		"bartender's special": "Unique cocktail creations from our expert mixologist.",
-		"must try": "Highly recommended, a definite crowd-pleaser.",
-		"spicy": "Contains a significant level of spice.",
-		"new arrival": "Fresh additions to our menu selection.",
-		"light bite": "Smaller portions, perfect for a light snack.",
-		"refreshing": "Cooling and thirst-quenching beverages.",
-		"classic": "A timeless and well-loved choice.",
-		"strong": "Indicates a beverage with higher alcoholic content.",
-		"blended scotch": "Smooth and complex blended Scotch whiskies.",
-		"tennessee whiskey": "Charcoal-mellowed Tennessee whiskey.",
-		"indian single malt": "Exceptional whiskies crafted in India.",
-		"premium": "A top-shelf or high-quality offering.",
-		"lager": "Crisp and clean lager beers.",
-		"imported": "Internationally sourced beverages.",
-		"wheat beer": "Smooth and often fruity wheat-based beers.",
-		"domestic": "Locally produced or nationally recognized brands.",
-		"craft beer": "Artisanally brewed beers with unique flavors.",
-		"indian craft": "Craft beers brewed in India.",
-		"indian wine": "Wines produced in Indian vineyards.",
-		"white wine": "Light and crisp white wines.",
-		"red wine": "Robust and flavorful red wines.",
-		"sparkling wine": "Bubbly wines for celebrations or enjoyment.",
-		"celebration": "Perfect for special occasions.",
-		"traditional indian": "Classic Indian flavors and preparations.",
-		"healthy choice": "Lighter and nutritious options.",
-		"unique": "A distinct and uncommon flavor experience.",
-		"bold flavor": "A strong and impactful taste profile.",
-		"seafood delight": "Featuring fresh and delicious seafood.",
-		"vegetarian favorite": "Popular choices among vegetarians.",
-		"quick bite": "Fast and easy options for a snack.",
-		"tangy": "Offers a zesty and tart flavor profile.",
-		"royal treat": "Luxurious and indulgent dishes.",
-		"smoky flavor": "Characterized by a distinct smoky taste from tandoor or grilling.",
-		"floral": "Drinks with aromatic floral notes.",
-		"creamy": "Smooth and rich texture, often in cocktails, curries or desserts.",
-		"tropical": "Evokes flavors of tropical fruits.",
-		"tequila": "Highlights tequila-based cocktails.",
-		"bitter-sweet": "A balanced profile of bitterness and sweetness.",
-		"sophisticated": "Elegant and refined choices.",
-		"award-winner": "Recognized with awards for quality.",
-		"irish whiskey": "Features smooth Irish whiskies.",
-		"smooth": "Easy to drink, without harshness.",
-		"cider": "Beverages made from fermented fruit juice, typically apple.",
-		"reserve": "Indicates a higher quality wine, often aged longer.",
-		"imported wine": "Wines sourced from international vineyards.",
-		"classic mocktail": "Well-known non-alcoholic mixed drinks.",
-		"spicy mocktail": "Non-alcoholic drinks with a notable spicy kick.",
-		"digestive": "Aids in digestion.",
-		"mildly spiced": "Subtly flavored with spices, not overwhelmingly hot.",
-		"melts in mouth": "Food with a very soft and tender texture.",
-		"south indian": "Cuisine or flavors originating from South India.",
-		"curry": "Spiced dishes, typically with a sauce or gravy.",
-		"all-time favorite": "A universally loved and classic dish, consistently popular.",
-		"breads": "Various types of Indian and other breads to accompany meals.",
-		"accompaniment": "Served alongside main dishes to complete the meal.",
-		"soft drink": "Non-alcoholic carbonated or still beverages.",
-		"essential": "Basic necessities like water.",
-		"mixer": "Non-alcoholic beverages commonly used to mix with spirits.",
-		"bitter": "Beverages with a distinct bitter taste profile, like tonic water.",
-		"customizable": "Can be prepared according to guest preference (e.g., sweet/salted).",
-		"crispy": "Food item with a delightfully crisp texture.",
-		"aromatic": "Dishes with a strong, pleasant aroma from spices and herbs."
-	  }
+		"categories": [
+			{
+				"id": 1,
+				"name": "Chakna & Bar Bites",
+				"description": "Perfect accompaniments for your drinks, with an Indian twist.",
+				"type": "food"
+			},
+			{
+				"id": 2,
+				"name": "Tandoori Delights",
+				"description": "Smoky and flavorful small plates from our authentic tandoor.",
+				"type": "food"
+			},
+			{
+				"id": 9,
+				"name": "Starters (Appetizers)",
+				"description": "Flavorful beginnings to your dining experience, beyond typical bar snacks.",
+				"type": "food"
+			},
+			{
+				"id": 10,
+				"name": "Main Course (Indian Curries & Breads)",
+				"description": "Hearty and aromatic main dishes served with traditional Indian breads.",
+				"type": "food"
+			},
+			{
+				"id": 3,
+				"name": "Signature Cocktails",
+				"description": "Our mixologist's unique Indian-inspired alcoholic creations.",
+				"type": "alcoholic"
+			},
+			{
+				"id": 4,
+				"name": "Classic Cocktails",
+				"description": "Timeless international cocktails, expertly crafted.",
+				"type": "alcoholic"
+			},
+			{
+				"id": 5,
+				"name": "Whiskey & Malts",
+				"description": "A curated selection of fine whiskies, bourbons, and single malts (served 30ml/60ml).",
+				"type": "alcoholic"
+			},
+			{
+				"id": 6,
+				"name": "Beers & Ciders",
+				"description": "A range of domestic, imported, and craft beers and ciders.",
+				"type": "alcoholic"
+			},
+			{
+				"id": 7,
+				"name": "Wines",
+				"description": "Selected red, white, rosé, and sparkling wines (served by glass/bottle).",
+				"type": "alcoholic"
+			},
+			{
+				"id": 8,
+				"name": "Mocktails & Refreshers",
+				"description": "Creative non-alcoholic beverages, fresh juices, and traditional coolers.",
+				"type": "beverage"
+			},
+			{
+				"id": 11,
+				"name": "Soft Drinks & Mixers",
+				"description": "Standard soft drinks, aerated beverages, and mixers.",
+				"type": "beverage"
+			}
+		],
+		"dishes": [
+			{
+				"id": 101,
+				"name": "Masala Peanuts",
+				"description": "Roasted peanuts tossed with chopped onions, tomatoes, green chillies, chaat masala, and a squeeze of lemon.",
+				"category_id": 1,
+				"price": 220,
+				"veg": true,
+				"spice_level": 2,
+				"tags": [
+					"popular",
+					"light bite"
+				],
+				"preparation_time": 5,
+				"ingredients": [
+					"peanuts",
+					"onion",
+					"tomato",
+					"green chilli",
+					"chaat masala",
+					"lemon"
+				]
+			},
+			{
+				"id": 102,
+				"name": "Cheesy Garlic Bread with Jalapeños",
+				"description": "Crispy toasted bread topped with molten cheese, garlic butter, and spicy jalapeño slices.",
+				"category_id": 1,
+				"price": 280,
+				"veg": true,
+				"spice_level": 1,
+				"tags": [
+					"popular",
+					"must try"
+				],
+				"preparation_time": 10,
+				"ingredients": [
+					"bread",
+					"mozzarella cheese",
+					"garlic butter",
+					"jalapeños",
+					"herbs"
+				]
+			},
+			{
+				"id": 103,
+				"name": "Spicy Chicken Popcorn",
+				"description": "Bite-sized chicken pieces marinated in fiery spices, fried till golden and crisp.",
+				"category_id": 1,
+				"price": 350,
+				"veg": false,
+				"spice_level": 3,
+				"tags": [
+					"hot",
+					"spicy",
+					"popular"
+				],
+				"preparation_time": 15,
+				"ingredients": [
+					"chicken breast",
+					"flour",
+					"red chilli powder",
+					"spices",
+					"breadcrumbs"
+				]
+			},
+			{
+				"id": 125,
+				"name": "Fish Fingers with Tartar Sauce",
+				"description": "Crispy fried fish batons served with a creamy, tangy tartar dip.",
+				"category_id": 1,
+				"price": 420,
+				"veg": false,
+				"spice_level": 1,
+				"tags": [
+					"popular",
+					"seafood delight"
+				],
+				"preparation_time": 15,
+				"ingredients": [
+					"fish fillet",
+					"breadcrumbs",
+					"flour",
+					"egg",
+					"tartar sauce",
+					"lemon"
+				]
+			},
+			{
+				"id": 126,
+				"name": "Hara Bhara Kebab (Bar Snack Style)",
+				"description": "Spinach, peas, and potato patties infused with Indian spices, shallow fried, served as small bites.",
+				"category_id": 1,
+				"price": 340,
+				"veg": true,
+				"spice_level": 1,
+				"tags": [
+					"vegetarian favorite",
+					"healthy choice",
+					"light bite"
+				],
+				"preparation_time": 18,
+				"ingredients": [
+					"spinach",
+					"green peas",
+					"potatoes",
+					"paneer",
+					"spices",
+					"breadcrumbs"
+				]
+			},
+			{
+				"id": 127,
+				"name": "Chilli Cheese Toast",
+				"description": "Classic comfort snack - toasted bread topped with gooey cheese and zesty green chillies.",
+				"category_id": 1,
+				"price": 290,
+				"veg": true,
+				"spice_level": 2,
+				"tags": [
+					"popular",
+					"quick bite"
+				],
+				"preparation_time": 8,
+				"ingredients": [
+					"bread",
+					"cheddar cheese",
+					"mozzarella cheese",
+					"green chillies",
+					"butter"
+				]
+			},
+			{
+				"id": 104,
+				"name": "Hariyali Paneer Tikka",
+				"description": "Cottage cheese cubes marinated in a vibrant green paste of mint, coriander, and spices, char-grilled.",
+				"category_id": 2,
+				"price": 380,
+				"veg": true,
+				"spice_level": 2,
+				"tags": [
+					"chef's special",
+					"popular"
+				],
+				"preparation_time": 15,
+				"ingredients": [
+					"paneer",
+					"yogurt",
+					"mint",
+					"coriander",
+					"green chillies",
+					"spices"
+				]
+			},
+			{
+				"id": 105,
+				"name": "Murgh Seekh Kebab",
+				"description": "Minced chicken blended with aromatic spices, skewered and grilled to perfection in the tandoor.",
+				"category_id": 2,
+				"price": 450,
+				"veg": false,
+				"spice_level": 2,
+				"tags": [
+					"popular",
+					"must try"
+				],
+				"preparation_time": 18,
+				"ingredients": [
+					"minced chicken",
+					"ginger-garlic paste",
+					"onions",
+					"coriander",
+					"spices"
+				]
+			},
+			{
+				"id": 106,
+				"name": "Tandoori Aloo Chaat",
+				"description": "Smoky tandoor-roasted baby potatoes tossed in tangy chaat masala and chutneys.",
+				"category_id": 2,
+				"price": 320,
+				"veg": true,
+				"spice_level": 1,
+				"tags": [
+					"light bite",
+					"new arrival"
+				],
+				"preparation_time": 12,
+				"ingredients": [
+					"baby potatoes",
+					"yogurt",
+					"tandoori masala",
+					"chaat masala",
+					"mint chutney",
+					"tamarind chutney"
+				]
+			},
+			{
+				"id": 128,
+				"name": "Achari Fish Tikka",
+				"description": "Succulent fish pieces marinated in tangy pickle spices and yogurt, grilled in the tandoor.",
+				"category_id": 2,
+				"price": 480,
+				"veg": false,
+				"spice_level": 2,
+				"tags": [
+					"chef's special",
+					"seafood delight",
+					"tangy"
+				],
+				"preparation_time": 18,
+				"ingredients": [
+					"fish fillet",
+					"yogurt",
+					"achari masala",
+					"mustard oil",
+					"ginger-garlic paste"
+				]
+			},
+			{
+				"id": 129,
+				"name": "Mutton Galouti Kebab",
+				"description": "Melt-in-the-mouth minced mutton kebabs, delicately spiced and pan-fried, served on ulte tawe ka paratha.",
+				"category_id": 2,
+				"price": 550,
+				"veg": false,
+				"spice_level": 2,
+				"tags": [
+					"royal treat",
+					"must try",
+					"popular",
+					"melts in mouth"
+				],
+				"preparation_time": 25,
+				"ingredients": [
+					"minced mutton",
+					"raw papaya paste",
+					"spices",
+					"ghee",
+					"saffron"
+				]
+			},
+			{
+				"id": 130,
+				"name": "Tandoori Mushroom Tikka",
+				"description": "Button mushrooms marinated in spiced yogurt and char-grilled to perfection.",
+				"category_id": 2,
+				"price": 360,
+				"veg": true,
+				"spice_level": 2,
+				"tags": [
+					"vegetarian favorite",
+					"smoky flavor"
+				],
+				"preparation_time": 15,
+				"ingredients": [
+					"button mushrooms",
+					"yogurt",
+					"tandoori masala",
+					"besan",
+					"spices"
+				]
+			},
+			{
+				"id": 149,
+				"name": "Dahi Ke Kebab",
+				"description": "Yogurt patties blended with spices and herbs, delicately fried. A creamy delight.",
+				"category_id": 9,
+				"price": 370,
+				"veg": true,
+				"spice_level": 1,
+				"tags": [
+					"vegetarian favorite",
+					"mildly spiced",
+					"melts in mouth",
+					"chef's special"
+				],
+				"preparation_time": 15,
+				"ingredients": [
+					"hung curd",
+					"paneer",
+					"spices",
+					"herbs",
+					"breadcrumbs"
+				]
+			},
+			{
+				"id": 150,
+				"name": "Amritsari Fish Fry",
+				"description": "Spicy battered fish, deep-fried till golden and crisp, served with mint chutney and lemon wedges.",
+				"category_id": 9,
+				"price": 490,
+				"veg": false,
+				"spice_level": 2,
+				"tags": [
+					"popular",
+					"seafood delight",
+					"spicy",
+					"must try"
+				],
+				"preparation_time": 18,
+				"ingredients": [
+					"fish fillet",
+					"gram flour",
+					"ajwain",
+					"spices",
+					"lemon juice",
+					"mint chutney"
+				]
+			},
+			{
+				"id": 151,
+				"name": "Chicken 65",
+				"description": "Spicy, deep-fried chicken bites originating from Chennai, tossed with curry leaves and green chillies.",
+				"category_id": 9,
+				"price": 430,
+				"veg": false,
+				"spice_level": 3,
+				"tags": [
+					"hot",
+					"spicy",
+					"popular",
+					"south indian"
+				],
+				"preparation_time": 20,
+				"ingredients": [
+					"chicken",
+					"yogurt",
+					"curry leaves",
+					"ginger-garlic paste",
+					"spices",
+					"rice flour"
+				]
+			},
+			{
+				"id": 163,
+				"name": "Paneer Pakora",
+				"description": "Cottage cheese slices dipped in spiced gram flour batter and deep fried.",
+				"category_id": 9,
+				"price": 350,
+				"veg": true,
+				"spice_level": 1,
+				"tags": [
+					"vegetarian favorite",
+					"classic",
+					"crispy"
+				],
+				"preparation_time": 15,
+				"ingredients": [
+					"paneer",
+					"gram flour",
+					"ajwain",
+					"spices",
+					"oil"
+				]
+			},
+			{
+				"id": 152,
+				"name": "Butter Chicken",
+				"description": "Classic creamy tomato and butter based chicken curry, finished with fenugreek.",
+				"category_id": 10,
+				"price": 550,
+				"veg": false,
+				"spice_level": 2,
+				"tags": [
+					"popular",
+					"chef's special",
+					"curry",
+					"all-time favorite",
+					"creamy"
+				],
+				"preparation_time": 25,
+				"ingredients": [
+					"chicken",
+					"tomato puree",
+					"butter",
+					"cream",
+					"cashew paste",
+					"spices",
+					"fenugreek"
+				]
+			},
+			{
+				"id": 153,
+				"name": "Dal Makhani",
+				"description": "Slow-cooked black lentils and kidney beans in a rich, buttery, creamy sauce.",
+				"category_id": 10,
+				"price": 480,
+				"veg": true,
+				"spice_level": 2,
+				"tags": [
+					"popular",
+					"vegetarian favorite",
+					"curry",
+					"creamy",
+					"all-time favorite"
+				],
+				"preparation_time": 30,
+				"ingredients": [
+					"black lentils",
+					"kidney beans",
+					"butter",
+					"cream",
+					"tomato puree",
+					"spices"
+				]
+			},
+			{
+				"id": 154,
+				"name": "Paneer Butter Masala",
+				"description": "Cottage cheese cubes in a rich, mildly sweet, creamy tomato and cashew gravy.",
+				"category_id": 10,
+				"price": 520,
+				"veg": true,
+				"spice_level": 1,
+				"tags": [
+					"popular",
+					"vegetarian favorite",
+					"curry",
+					"creamy"
+				],
+				"preparation_time": 20,
+				"ingredients": [
+					"paneer",
+					"tomato puree",
+					"cashew paste",
+					"butter",
+					"cream",
+					"spices"
+				]
+			},
+			{
+				"id": 164,
+				"name": "Mutton Rogan Josh",
+				"description": "Aromatic lamb curry, slow-cooked in a gravy of browned onions, yogurt, garlic, ginger and aromatic spices.",
+				"category_id": 10,
+				"price": 650,
+				"veg": false,
+				"spice_level": 3,
+				"tags": [
+					"popular",
+					"curry",
+					"chef's special",
+					"aromatic",
+					"spicy"
+				],
+				"preparation_time": 35,
+				"ingredients": [
+					"mutton",
+					"yogurt",
+					"onions",
+					"ginger-garlic paste",
+					"kashmiri red chilli",
+					"spices"
+				]
+			},
+			{
+				"id": 155,
+				"name": "Garlic Naan",
+				"description": "Soft Indian leavened flatbread topped with garlic and butter.",
+				"category_id": 10,
+				"price": 120,
+				"veg": true,
+				"spice_level": 1,
+				"tags": [
+					"popular",
+					"breads",
+					"accompaniment"
+				],
+				"preparation_time": 7,
+				"ingredients": [
+					"refined flour",
+					"yeast",
+					"yogurt",
+					"garlic",
+					"butter"
+				]
+			},
+			{
+				"id": 156,
+				"name": "Tandoori Roti",
+				"description": "Whole wheat unleavened bread cooked in a tandoor.",
+				"category_id": 10,
+				"price": 80,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"breads",
+					"healthy choice",
+					"accompaniment"
+				],
+				"preparation_time": 5,
+				"ingredients": [
+					"whole wheat flour",
+					"water",
+					"salt"
+				]
+			},
+			{
+				"id": 157,
+				"name": "Laccha Paratha",
+				"description": "Layered flaky whole wheat bread, cooked with ghee or oil.",
+				"category_id": 10,
+				"price": 100,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"breads",
+					"popular",
+					"accompaniment"
+				],
+				"preparation_time": 8,
+				"ingredients": [
+					"whole wheat flour",
+					"ghee",
+					"salt"
+				]
+			},
+			{
+				"id": 165,
+				"name": "Butter Naan",
+				"description": "Soft Indian leavened flatbread generously brushed with butter.",
+				"category_id": 10,
+				"price": 100,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"popular",
+					"breads",
+					"accompaniment"
+				],
+				"preparation_time": 7,
+				"ingredients": [
+					"refined flour",
+					"yeast",
+					"yogurt",
+					"butter"
+				]
+			},
+			{
+				"id": 107,
+				"name": "Imli Mojito",
+				"description": "A tantalizing Indian twist! White rum, tamarind pulp, mint, lime, sugar, topped with soda.",
+				"category_id": 3,
+				"price": 550,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"bartender's special",
+					"refreshing",
+					"popular"
+				],
+				"preparation_time": 3,
+				"ingredients": [
+					"white rum",
+					"tamarind pulp",
+					"mint leaves",
+					"lime wedges",
+					"sugar",
+					"soda"
+				]
+			},
+			{
+				"id": 108,
+				"name": "Paan-tastic Martini",
+				"description": "Vodka infused with the flavors of paan (betel leaf), gulkand, and a hint of cardamom.",
+				"category_id": 3,
+				"price": 620,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"must try",
+					"bartender's special",
+					"unique"
+				],
+				"preparation_time": 4,
+				"ingredients": [
+					"vodka",
+					"paan syrup",
+					"gulkand",
+					"cardamom powder",
+					"lime juice"
+				]
+			},
+			{
+				"id": 109,
+				"name": "Masala Chai Old Fashioned",
+				"description": "Whiskey infused with masala chai spices, bitters, and a touch of jaggery syrup.",
+				"category_id": 3,
+				"price": 650,
+				"veg": true,
+				"spice_level": 1,
+				"tags": [
+					"new arrival",
+					"bold flavor"
+				],
+				"preparation_time": 4,
+				"ingredients": [
+					"whiskey",
+					"masala chai reduction",
+					"angostura bitters",
+					"jaggery syrup",
+					"orange peel"
+				]
+			},
+			{
+				"id": 131,
+				"name": "Kala Khatta Gola Spike",
+				"description": "Childhood nostalgia with an adult kick! Vodka, kala khatta syrup, chaat masala, lime, and soda.",
+				"category_id": 3,
+				"price": 580,
+				"veg": true,
+				"spice_level": 1,
+				"tags": [
+					"bartender's special",
+					"unique",
+					"tangy"
+				],
+				"preparation_time": 3,
+				"ingredients": [
+					"vodka",
+					"kala khatta syrup",
+					"chaat masala",
+					"lime juice",
+					"soda"
+				]
+			},
+			{
+				"id": 132,
+				"name": "Gulab Fizz",
+				"description": "Elegant and aromatic: Gin, rose syrup, fresh lime juice, topped with sparkling water and edible rose petals.",
+				"category_id": 3,
+				"price": 600,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"refreshing",
+					"floral",
+					"bartender's special"
+				],
+				"preparation_time": 3,
+				"ingredients": [
+					"gin",
+					"rose syrup",
+					"lime juice",
+					"sparkling water",
+					"edible rose petals"
+				]
+			},
+			{
+				"id": 133,
+				"name": "Coconut & Cardamom Daiquiri",
+				"description": "A tropical Indian twist on a classic. White rum, creamy coconut, fragrant cardamom, and zesty lime.",
+				"category_id": 3,
+				"price": 630,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"creamy",
+					"tropical",
+					"unique"
+				],
+				"preparation_time": 4,
+				"ingredients": [
+					"white rum",
+					"coconut cream",
+					"cardamom syrup",
+					"lime juice"
+				]
+			},
+			{
+				"id": 110,
+				"name": "Whiskey Sour",
+				"description": "A perfect balance of whiskey, fresh lemon juice, sugar, and optionally, egg white.",
+				"category_id": 4,
+				"price": 580,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"popular",
+					"classic"
+				],
+				"preparation_time": 3,
+				"ingredients": [
+					"bourbon whiskey",
+					"lemon juice",
+					"sugar syrup",
+					"egg white (optional)"
+				]
+			},
+			{
+				"id": 111,
+				"name": "Long Island Iced Tea (LIIT)",
+				"description": "A potent mix of five white spirits, lime juice, and a splash of cola.",
+				"category_id": 4,
+				"price": 700,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"popular",
+					"strong"
+				],
+				"preparation_time": 3,
+				"ingredients": [
+					"vodka",
+					"gin",
+					"rum",
+					"tequila",
+					"triple sec",
+					"lime juice",
+					"cola"
+				]
+			},
+			{
+				"id": 112,
+				"name": "Cosmopolitan",
+				"description": "Vodka, triple sec, cranberry juice, and freshly squeezed lime juice. Chic and tart.",
+				"category_id": 4,
+				"price": 600,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"classic",
+					"refreshing"
+				],
+				"preparation_time": 2,
+				"ingredients": [
+					"vodka",
+					"triple sec",
+					"cranberry juice",
+					"lime juice"
+				]
+			},
+			{
+				"id": 134,
+				"name": "Margarita",
+				"description": "The quintessential tequila cocktail with triple sec and fresh lime juice, served with a salt rim.",
+				"category_id": 4,
+				"price": 620,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"popular",
+					"classic",
+					"tequila"
+				],
+				"preparation_time": 3,
+				"ingredients": [
+					"tequila",
+					"triple sec",
+					"lime juice",
+					"salt"
+				]
+			},
+			{
+				"id": 135,
+				"name": "Negroni",
+				"description": "A perfectly balanced Italian classic: equal parts gin, Campari, and sweet vermouth.",
+				"category_id": 4,
+				"price": 680,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"classic",
+					"bitter-sweet",
+					"sophisticated"
+				],
+				"preparation_time": 2,
+				"ingredients": [
+					"gin",
+					"campari",
+					"sweet vermouth",
+					"orange peel"
+				]
+			},
+			{
+				"id": 136,
+				"name": "Pina Colada",
+				"description": "A sweet and creamy tropical delight made with rum, coconut cream, and pineapple juice.",
+				"category_id": 4,
+				"price": 600,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"popular",
+					"classic",
+					"tropical",
+					"creamy"
+				],
+				"preparation_time": 3,
+				"ingredients": [
+					"white rum",
+					"coconut cream",
+					"pineapple juice"
+				]
+			},
+			{
+				"id": 113,
+				"name": "Johnnie Walker Black Label",
+				"description": "A rich, complex, and incredibly well-balanced blended Scotch whisky.",
+				"category_id": 5,
+				"price": 550,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"popular",
+					"blended scotch"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"blended scotch whisky"
+				]
+			},
+			{
+				"id": 114,
+				"name": "Jack Daniel's Old No. 7",
+				"description": "Classic Tennessee whiskey with a smooth character and notes of caramel and vanilla.",
+				"category_id": 5,
+				"price": 500,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"popular",
+					"tennessee whiskey"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"tennessee whiskey"
+				]
+			},
+			{
+				"id": 115,
+				"name": "Paul John Brilliance",
+				"description": "An unpeated Indian single malt with notes of honey, fruit, and a hint of spice.",
+				"category_id": 5,
+				"price": 750,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"indian single malt",
+					"must try",
+					"premium"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"indian single malt whisky"
+				]
+			},
+			{
+				"id": 137,
+				"name": "Amrut Fusion Single Malt",
+				"description": "Award-winning Indian single malt with notes of peat, fruit, and spice. A connoisseur's choice.",
+				"category_id": 5,
+				"price": 850,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"indian single malt",
+					"premium",
+					"award-winner"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"indian single malt whisky"
+				]
+			},
+			{
+				"id": 138,
+				"name": "Glenfiddich 12 YO",
+				"description": "A classic Speyside single malt Scotch whisky, renowned for its sweet and fruity notes.",
+				"category_id": 5,
+				"price": 900,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"single malt scotch",
+					"premium",
+					"popular"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"single malt scotch whisky"
+				]
+			},
+			{
+				"id": 139,
+				"name": "Jameson Irish Whiskey",
+				"description": "Smooth and versatile Irish whiskey, triple distilled for a balanced flavor.",
+				"category_id": 5,
+				"price": 580,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"irish whiskey",
+					"popular",
+					"smooth"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"irish whiskey"
+				]
+			},
+			{
+				"id": 116,
+				"name": "Kingfisher Ultra (Bottle)",
+				"description": "A smooth, crisp, and refreshing Indian lager, easy to drink.",
+				"category_id": 6,
+				"price": 300,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"popular",
+					"lager",
+					"domestic"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"malted barley",
+					"hops",
+					"water",
+					"yeast"
+				]
+			},
+			{
+				"id": 117,
+				"name": "Hoegaarden Witbier (Draught/Bottle)",
+				"description": "The original Belgian wheat beer, with notes of coriander and orange peel.",
+				"category_id": 6,
+				"price": 480,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"imported",
+					"wheat beer",
+					"popular"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"wheat",
+					"barley malt",
+					"hops",
+					"coriander",
+					"orange peel"
+				]
+			},
+			{
+				"id": 118,
+				"name": "Simba Wit (Bottle)",
+				"description": "A flavorful Indian craft wheat beer with hints of orange zest, coriander and lemongrass.",
+				"category_id": 6,
+				"price": 380,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"craft beer",
+					"wheat beer",
+					"indian craft"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"wheat",
+					"barley",
+					"orange zest",
+					"coriander",
+					"lemongrass"
+				]
+			},
+			{
+				"id": 140,
+				"name": "Bira 91 White (Bottle/Draught)",
+				"description": "A popular Indian craft wheat beer, cloudy and refreshing with citrus and coriander notes.",
+				"category_id": 6,
+				"price": 360,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"indian craft",
+					"wheat beer",
+					"popular",
+					"refreshing"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"wheat",
+					"barley malt",
+					"hops",
+					"coriander",
+					"orange peel"
+				]
+			},
+			{
+				"id": 141,
+				"name": "Corona Extra (Bottle)",
+				"description": "A crisp, pale Mexican lager, often served with a lime wedge.",
+				"category_id": 6,
+				"price": 450,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"imported",
+					"lager",
+					"popular"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"barley malt",
+					"hops",
+					"corn",
+					"yeast"
+				]
+			},
+			{
+				"id": 142,
+				"name": "Strongbow Apple Cider (Bottle)",
+				"description": "A crisp and refreshing apple cider, perfect for a change of pace.",
+				"category_id": 6,
+				"price": 420,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"cider",
+					"imported",
+					"refreshing"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"fermented apple juice"
+				]
+			},
+			{
+				"id": 119,
+				"name": "Fratelli Sangiovese Bianco (Glass/Bottle)",
+				"description": "A crisp and refreshing Indian white wine with fruity notes. India's first Sangiovese white.",
+				"category_id": 7,
+				"price": 600,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"indian wine",
+					"white wine",
+					"popular"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"sangiovese bianco grapes"
+				]
+			},
+			{
+				"id": 120,
+				"name": "Big Banyan Merlot (Glass/Bottle)",
+				"description": "A smooth Indian red wine with aromas of dark cherries, plums, and a hint of spice.",
+				"category_id": 7,
+				"price": 650,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"indian wine",
+					"red wine",
+					"must try"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"merlot grapes"
+				]
+			},
+			{
+				"id": 121,
+				"name": "Chandon Brut (Bottle)",
+				"description": "A premium Indian sparkling wine with crisp apple and citrus notes.",
+				"category_id": 7,
+				"price": 3500,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"indian wine",
+					"sparkling wine",
+					"celebration"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"chardonnay grapes",
+					"pinot noir grapes",
+					"chenin blanc grapes"
+				]
+			},
+			{
+				"id": 143,
+				"name": "Sula Dindori Reserve Shiraz (Glass/Bottle)",
+				"description": "A full-bodied Indian red wine with rich berry flavors and hints of spice.",
+				"category_id": 7,
+				"price": 700,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"indian wine",
+					"red wine",
+					"popular",
+					"reserve"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"shiraz grapes"
+				]
+			},
+			{
+				"id": 144,
+				"name": "York Arros (Bottle)",
+				"description": "A premium Indian reserve blend of Shiraz and Cabernet Sauvignon, barrel-aged.",
+				"category_id": 7,
+				"price": 2800,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"indian wine",
+					"red wine",
+					"premium",
+					"reserve"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"shiraz grapes",
+					"cabernet sauvignon grapes"
+				]
+			},
+			{
+				"id": 145,
+				"name": "Jacob's Creek Chardonnay (Glass/Bottle)",
+				"description": "A popular Australian white wine with notes of melon, peach, and a touch of oak.",
+				"category_id": 7,
+				"price": 750,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"imported wine",
+					"white wine",
+					"popular"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"chardonnay grapes"
+				]
+			},
+			{
+				"id": 122,
+				"name": "Aam Panna Sparkler",
+				"description": "Refreshing raw mango drink with mint, roasted cumin, black salt, and a splash of soda.",
+				"category_id": 8,
+				"price": 320,
+				"veg": true,
+				"spice_level": 1,
+				"tags": [
+					"popular",
+					"refreshing",
+					"traditional indian"
+				],
+				"preparation_time": 3,
+				"ingredients": [
+					"raw mango pulp",
+					"mint leaves",
+					"roasted cumin",
+					"black salt",
+					"sugar",
+					"soda"
+				]
+			},
+			{
+				"id": 123,
+				"name": "Berry Blast Smoothie",
+				"description": "A healthy blend of mixed berries, yogurt, and a touch of honey.",
+				"category_id": 8,
+				"price": 380,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"healthy choice",
+					"refreshing"
+				],
+				"preparation_time": 4,
+				"ingredients": [
+					"mixed berries",
+					"yogurt",
+					"honey",
+					"banana (optional)"
+				]
+			},
+			{
+				"id": 124,
+				"name": "Classic Nimbu Pani Shikanji",
+				"description": "The ultimate Indian lemonade with a twist of black salt, cumin, and sugar/salt.",
+				"category_id": 8,
+				"price": 250,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"traditional indian",
+					"refreshing",
+					"popular"
+				],
+				"preparation_time": 2,
+				"ingredients": [
+					"lemon juice",
+					"water",
+					"sugar",
+					"black salt",
+					"roasted cumin powder"
+				]
+			},
+			{
+				"id": 146,
+				"name": "Virgin Mojito",
+				"description": "The classic refreshing mix of mint, lime, sugar, and soda, minus the rum.",
+				"category_id": 8,
+				"price": 300,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"popular",
+					"refreshing",
+					"classic mocktail"
+				],
+				"preparation_time": 3,
+				"ingredients": [
+					"mint leaves",
+					"lime wedges",
+					"sugar syrup",
+					"soda water"
+				]
+			},
+			{
+				"id": 147,
+				"name": "Spiced Guava Cooler",
+				"description": "Sweet guava juice with a spicy kick from Tabasco, balanced with lime and chaat masala.",
+				"category_id": 8,
+				"price": 340,
+				"veg": true,
+				"spice_level": 2,
+				"tags": [
+					"unique",
+					"spicy mocktail",
+					"refreshing"
+				],
+				"preparation_time": 3,
+				"ingredients": [
+					"guava juice",
+					"tabasco sauce",
+					"lime juice",
+					"chaat masala",
+					"ice"
+				]
+			},
+			{
+				"id": 148,
+				"name": "Kokum Sherbet",
+				"description": "A traditional Indian summer cooler made from Kokum fruit, known for its tangy and digestive properties.",
+				"category_id": 8,
+				"price": 280,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"traditional indian",
+					"healthy choice",
+					"digestive",
+					"tangy"
+				],
+				"preparation_time": 2,
+				"ingredients": [
+					"kokum syrup",
+					"water",
+					"sugar (optional)",
+					"cumin powder (optional)"
+				]
+			},
+			{
+				"id": 158,
+				"name": "Bottled Water (1L)",
+				"description": "Packaged drinking water (Brand subject to availability).",
+				"category_id": 11,
+				"price": 60,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"soft drink",
+					"essential"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"purified water"
+				]
+			},
+			{
+				"id": 159,
+				"name": "Aerated Beverages (Pepsi/Coke/Diet Coke/7Up/Mirinda)",
+				"description": "Choice of popular carbonated soft drinks (Can/Bottle).",
+				"category_id": 11,
+				"price": 90,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"soft drink",
+					"popular"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"carbonated water",
+					"sweetener",
+					"flavorings"
+				]
+			},
+			{
+				"id": 160,
+				"name": "Club Soda / Sparkling Water",
+				"description": "Plain carbonated water, perfect as a mixer or on its own.",
+				"category_id": 11,
+				"price": 70,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"soft drink",
+					"mixer"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"carbonated water"
+				]
+			},
+			{
+				"id": 161,
+				"name": "Tonic Water",
+				"description": "Carbonated water with quinine, a classic mixer for gin and other spirits.",
+				"category_id": 11,
+				"price": 100,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"soft drink",
+					"mixer",
+					"bitter"
+				],
+				"preparation_time": 1,
+				"ingredients": [
+					"carbonated water",
+					"quinine",
+					"sweetener"
+				]
+			},
+			{
+				"id": 162,
+				"name": "Fresh Lime Soda (Sweet/Salted/Mixed)",
+				"description": "Refreshing fizzy lime drink, made to your preference of sweet, salted, or both.",
+				"category_id": 11,
+				"price": 150,
+				"veg": true,
+				"spice_level": 0,
+				"tags": [
+					"soft drink",
+					"refreshing",
+					"customizable",
+					"traditional indian"
+				],
+				"preparation_time": 2,
+				"ingredients": [
+					"fresh lime juice",
+					"soda water",
+					"sugar",
+					"black salt",
+					"salt"
+				]
+			}
+		]
 	}
-  }
+}
