@@ -127,7 +127,7 @@ export default function RestaurantMenu() {
 
   if (isLoading) {
     return (
-      <div className="max-w-4xl mx-auto p-4 flex items-center justify-center min-h-[200px] bg-white dark:bg-gray-900">
+      <div className="max-w-4xl mx-auto p-4 flex items-center justify-center min-h-[200px] bg-white dark:bg-gray-950">
         <div className="text-gray-500 dark:text-gray-300">Loading menu...</div>
       </div>
     );
@@ -135,14 +135,14 @@ export default function RestaurantMenu() {
 
   if (!menuData) {
     return (
-      <div className="max-w-4xl mx-auto p-4 flex items-center justify-center min-h-[200px] bg-white dark:bg-gray-900">
+      <div className="max-w-4xl mx-auto p-4 flex items-center justify-center min-h-[200px] bg-white dark:bg-gray-950">
         <div className="text-red-500 dark:text-red-400">Failed to load menu data</div>
       </div>
     );
   }
 
   return (
-    <div className="max-w-4xl mx-auto p-4 bg-white dark:bg-gray-900 rounded-lg shadow">
+    <div className="max-w-4xl mx-auto p-4 bg-white dark:bg-gray-950 rounded-lg shadow">
       <AppHeader isDark={isDark} toggleDark={toggleDark} />
       {/* <DarkModeToggle  /> */}
 
@@ -186,10 +186,11 @@ export default function RestaurantMenu() {
                 }
                 <div className="grid grid-cols-1 md:grid-cols-1 gap-2">
                   {dishes.map((dish) => (
-                    <DishCard
-                      key={dish.id}
-                      dish={dish}
-                    />
+                    <div key={dish.id} className="bg-white dark:bg-gray-800 rounded-lg shadow">
+                      <DishCard
+                        dish={dish}
+                      />
+                    </div>
                   ))}
                 </div>
               </div>

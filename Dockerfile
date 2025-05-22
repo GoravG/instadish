@@ -9,11 +9,10 @@ RUN npm run build
 FROM nginx:alpine
 WORKDIR /usr/share/nginx/html
 
-# Copy built Next.js files (entire .next, not just static)
-COPY --from=builder /app/.next ./.next
-COPY --from=builder /app/public ./public
+# Copy only the static output from the Next.js build
+COPY --from=builder /app/out ./
 
-# Copy custom Nginx config
+# Copy custom Nginx config (ensure proper routing for SPA)
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Expose port
