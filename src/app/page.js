@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 import { SearchBar } from "@/components/menu/SearchBar";
 import { FilterSection } from "@/components/menu/FilterSection";
 import { DishCard } from "@/components/menu/DishCard";
-
 import { AppHeader } from "@/components/AppHeader";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export default function RestaurantMenu() {
   const [activeCategory, setActiveCategory] = useState(0);
@@ -125,8 +125,44 @@ export default function RestaurantMenu() {
 
   if (isLoading) {
     return (
-      <div className="max-w-4xl mx-auto p-4 flex items-center justify-center min-h-[200px] bg-white dark:bg-gray-950">
-        <div className="text-gray-500 dark:text-gray-300">Loading menu...</div>
+      <div className="max-w-4xl mx-auto p-4 bg-white dark:bg-gray-950">
+        <AppHeader isDark={isDark} toggleDark={toggleDark} />
+
+        {/* Search and filter skeletons */}
+        <div className="mb-6">
+          <Skeleton className="h-12 w-full mb-4" />
+          <div className="flex gap-2 mb-4">
+            <Skeleton className="h-9 w-24" />
+            <Skeleton className="h-9 w-28" />
+            <Skeleton className="h-9 w-32" />
+          </div>
+        </div>
+
+        {/* Category and dish skeletons */}
+        <div className="space-y-8">
+          {[1, 2, 3].map((category) => (
+            <div key={category} className="space-y-4">
+              <Skeleton className="h-7 w-48" />
+              <div className="space-y-4">
+                {[1, 2, 3].map((dish) => (
+                  <div key={dish} className="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+                    <div className="flex gap-4">
+                      <Skeleton className="h-24 w-24 rounded-lg flex-shrink-0" />
+                      <div className="flex-1 space-y-2">
+                        <Skeleton className="h-6 w-3/4" />
+                        <Skeleton className="h-4 w-1/2" />
+                        <div className="flex items-center gap-2 mt-4">
+                          <Skeleton className="h-5 w-16" />
+                          <Skeleton className="h-9 w-28" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     );
   }
